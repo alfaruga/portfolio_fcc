@@ -1,0 +1,105 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+footer {
+  bottom: 0;
+  background-color: #f3f3f3;
+  height: 50px;
+  text-align: center;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+#navbar ul {
+  display: flex;
+  padding: 0;
+}
+#navbar li,
+a {
+  color: black;
+  font-size: large;
+  padding: 5px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#navbar a:visited {
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  border-bottom: orangered 3px inset;
+  margin-bottom: -3px;
+}
+#welcome-section {
+  background-color: #ff7700;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23c50101' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23850707' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c6022d' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23920824' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c40f54' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23891640' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23ad0763' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23962663' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23bd2197' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2389216e' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a900a9' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%237f1b7f' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #141414;
+  margin-top: 50px;
+  margin-bottom: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+#welcome-section h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+#socialPages {
+  background-color: blue;
+  width: 80%;
+  margin: 0;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+#socialPages p {
+  display: inline;
+  color: #f3f3f3;
+  margin: 0;
+  text-align: center;
+}
+#socialPages a {
+  text-decoration: none;
+  display: inline;
+  color: #f3f3f3;
+}
+.project-tile {
+  background-color: orange;
+  width: 300px;
+  height: 150px;
+  box-sizing: border-box;
+  margin: 5px;
+  justify-self: center;
+}
+
+@media (max-width: 600px) {
+  #welcome-section {
+  }
+}
