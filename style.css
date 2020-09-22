@@ -1,3 +1,7 @@
+:root {
+  --shadow-color: #ff9e9e;
+  --shadow-color-light: white;
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #f3f3f3;
@@ -78,15 +82,20 @@ a {
   column-gap: 5px;
 }
 #titulo-projects {
-  height: 50px;
-  background-color: rgba(135, 207, 235, 0.322);
+  height: 200px;
+  background-color: #192824;
   text-align: center;
   margin: 0;
+  padding-top: 100px;
 }
 #titulo-projects i {
-  margin: auto;
-  color: #000;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  color: white;
+  animation: neon 3s infinite;
 }
+
 #welcome-section h1 {
   font-size: 4rem;
   text-align: center;
@@ -132,7 +141,40 @@ a {
   border-radius: 15px;
   background-color: #141414d0;
 }
-@media (max-width: 400px) {
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light),
+      0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
+      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
+@media (max-width: 650px) {
   #welcome-section h1 {
     font-size: 2.5em;
   }
