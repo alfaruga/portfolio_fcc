@@ -11,7 +11,16 @@ footer {
   margin-top: 5px;
   margin: auto;
   border-top: #141414 5px solid;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer i {
+  font-size: 1.8em;
+}
+footer i:hover {
+  color: white;
+  background-color: #141414;
 }
 #navbar {
   position: fixed;
@@ -101,7 +110,8 @@ a {
   display: grid;
   justify-content: center;
   height: 150vh;
-  background-image: url("background_projects.jpg");
+  width: 100%;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/background_projects.jpg?alt=media&token=2e6097df-cb70-46c6-b056-75fcaa59adb8");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -109,7 +119,6 @@ a {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   row-gap: 5px;
-  column-gap: 5px;
 }
 #titulo-projects {
   height: 200px;
@@ -124,13 +133,33 @@ a {
   padding: 0;
   color: white;
 }
+#calc {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Calculator.png?alt=media&token=4883ae1a-3102-4e69-ac93-91d4967e6ff8");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#prod {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Product%20landing%20page.png?alt=media&token=5f0585b8-9bd0-45ad-9ec1-a93e6ab7a10b");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#lib {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Library.png?alt=media&token=9909266a-f0bb-4700-a6c5-f5f880cd87ab");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tictac {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Tic%20tac%20toe.png?alt=media&token=d3ffa322-59cf-4ac4-907b-67841fe21cb2");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .project-tile {
-  width: 400px;
+  width: 80%;
   height: 200px;
   border-radius: 15px;
   box-sizing: border-box;
-  background-color: #1414147c;
+  background-color: #f3f3f3;
   justify-self: center;
 }
 .project-tile:hover {
@@ -141,22 +170,36 @@ a {
   width: 100%;
   height: 500px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #contact h1 {
   font-family: "Lato", sans-serif;
+  font-size: 3em;
 }
 #correo {
   padding: 15px;
   border: solid 3px black;
   width: fit-content;
   margin: auto;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.877),
+    rgb(48, 1, 255)
+  );
 }
 #correo:hover {
-  background-color: #c3c3c3;
-  transform: scale(1.1);
+  background-position: right center;
 }
+#contactName {
+  color: blue;
+  text-shadow: 0 0 3px #141414;
+}
+
 @media (max-width: 650px) {
   #welcome-section h1 {
     font-size: 2.5em;
