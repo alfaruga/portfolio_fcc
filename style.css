@@ -116,9 +116,8 @@ a {
   background-size: cover;
   background-position: center;
   align-items: center;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  row-gap: 5px;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 #titulo-projects {
   height: 200px;
@@ -135,40 +134,68 @@ a {
 }
 #calc {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Calculator.png?alt=media&token=4883ae1a-3102-4e69-ac93-91d4967e6ff8");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #prod {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Product%20landing%20page.png?alt=media&token=5f0585b8-9bd0-45ad-9ec1-a93e6ab7a10b");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #lib {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Library.png?alt=media&token=9909266a-f0bb-4700-a6c5-f5f880cd87ab");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #tictac {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Tic%20tac%20toe.png?alt=media&token=d3ffa322-59cf-4ac4-907b-67841fe21cb2");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .project-tile {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
   width: 80%;
   height: 200px;
   border-radius: 15px;
   box-sizing: border-box;
-  background-color: #f3f3f3;
+  background-color: black;
   justify-self: center;
 }
-.project-tile:hover {
-  border-radius: 15px;
-  background-color: #141414d0;
+
+.project-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.project-container ul {
+  color: white;
+  font-size: 1.5em;
+  list-style-type: none;
+}
+.project-container li {
+  padding: 5px, 0;
+}
+
+.project-links {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  font-size: 1.2em;
+  color: white;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-links a,
+.project-links p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #contact {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -210,7 +237,7 @@ a {
   }
   #projectsOnly {
     display: grid;
-    height: 150vh;
+    height: 200vh;
     justify-content: center;
     align-items: center;
     grid-template-columns: 80%;
@@ -218,5 +245,27 @@ a {
   }
   .project-tile {
     width: 90%;
+  }
+  .project-container {
+    grid-template-areas:
+      "image"
+      "text";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-container ul {
+    grid-area: text;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .project-tile {
+    grid-area: image;
   }
 }
