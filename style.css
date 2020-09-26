@@ -76,6 +76,8 @@ a {
   font-size: 4rem;
   text-align: center;
   font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 #socialPages {
   background-color: rgba(139, 0, 0, 0.5);
@@ -154,14 +156,14 @@ a {
   height: 200px;
   border-radius: 15px;
   box-sizing: border-box;
-  background-color: black;
   justify-self: center;
 }
 
 .project-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  grid-template-rows: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
   justify-content: space-between;
@@ -191,7 +193,14 @@ a {
 .project-links a,
 .project-links p {
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, black 10%, blue 100%);
+
+  background-size: 200%;
+}
+.project-links a:hover {
+  background-position-x: 50%;
+  margin: -3px;
+  border: 3px solid white;
 }
 #contact {
   width: 100%;
