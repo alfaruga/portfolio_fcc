@@ -135,21 +135,24 @@ a {
   color: white;
 }
 #calc {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Calculator.png?alt=media&token=4883ae1a-3102-4e69-ac93-91d4967e6ff8");
+  background-size: cover;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/asesoriasbg.png?alt=media&token=e745b73a-447d-453f-9470-4cb0673a7614");
 }
 #prod {
+  background-size: cover;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Product%20landing%20page.png?alt=media&token=5f0585b8-9bd0-45ad-9ec1-a93e6ab7a10b");
 }
 #lib {
+  background-size: cover;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Library.png?alt=media&token=9909266a-f0bb-4700-a6c5-f5f880cd87ab");
 }
 #tictac {
+  background-size: cover;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/Tic%20tac%20toe.png?alt=media&token=d3ffa322-59cf-4ac4-907b-67841fe21cb2");
 }
 
 .project-tile {
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
   text-align: center;
   width: 80%;
